@@ -1,14 +1,1 @@
 #Usuarios // contraseñas
-
-<<<<<<< HEAD:Basic_Data_Base/users_data.txt
-Pedro 123432141
-Levi_Dooku holaquetal
-Javier_Jimenez holamellamojavi
-Pedro_Velasco holaquetal
-Pedro_Velasco holaquetal
-Pedro pedrovelasco
-Pedro_Velasco holaquetal
-Pedro pedrovelasco
-Javier_Jimenez holaquetal
-=======
->>>>>>> 104a75a13dbe20dc824a2b86b654f9286d11027f:Basic_data_base/users_data.txt
