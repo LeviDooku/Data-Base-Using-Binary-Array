@@ -1,6 +1,7 @@
 #include "User_Pssw_Matrix_Class.h"
 #include<iostream>
 #include<string>
+#include<fstream>
 using namespace std;
 
 //Function for adding new users.
@@ -140,6 +141,8 @@ int main(){
 
 	User_Pssw_Matrix data_base;
 	char option;
+
+	//Save_To_File(data_base);
 	
 	//Opening a menu with an infinite while structure 
 	while(true){
@@ -169,6 +172,8 @@ int main(){
 		cout << "************************" << endl;
 		
 		cout << endl << endl;
+
+		data_base.Save_To_File();
 	}
 	
 	return 0;

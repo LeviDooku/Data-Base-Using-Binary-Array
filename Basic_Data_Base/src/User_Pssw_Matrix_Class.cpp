@@ -1,6 +1,7 @@
 #include "User_Pssw_Matrix_Class.h"
 #include<iostream>
 #include<string>
+#include<fstream>
 using namespace std;
 
 	User_Pssw_Matrix::User_Pssw_Matrix()
@@ -128,7 +129,50 @@ using namespace std;
 
 	//Show the matrix
 	void User_Pssw_Matrix::Show_Matrix(){
-        for (int i = 0; i < num_rows; i++) {
-           cout << matrix[i][0] << " " << matrix[i][1] << endl;
-        }
-    }
+		ifstream filename;
+		string texto;
+
+		filename.open("users_data.txt", ios::in);
+
+		if(filename.fail()){
+			return;
+		}
+
+		while(!filename.eof()){
+			getline(filename, texto);
+			cout << texto << endl;
+		}
+
+		filename.close();
+	}
+
+	//Save users in a file called users_data.txt    
+	void User_Pssw_Matrix::Save_To_File(){
+		ofstream filename; 
+
+		filename.open("users_data.txt", ios::app);
+
+		if(filename.fail()){
+			return; 
+		}
+
+		for(int i = 0; i < num_rows; i++){
+				filename << matrix[i][0] << " " << matrix[i][1] << endl;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

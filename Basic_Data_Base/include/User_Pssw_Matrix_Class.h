@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+#include<fstream>
 using namespace std;
 
 class User_Pssw_Matrix{
@@ -45,6 +46,10 @@ public:
 	void Add_User(string user_name, string password);
 
 	void Show_Matrix();
+
+	void Save_To_File();
+
+	//void Load_From_File();
 
 };
 

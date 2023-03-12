@@ -7,8 +7,6 @@ BIN=./bin
 all : $(BIN)/Basic_Data_Base
 	@echo ALL DONE
 
-directories : bin lib obj
-
 #Libraries
 
 $(OBJ)/User_Pssw_Matrix_Class.o : $(SRC)/User_Pssw_Matrix_Class.cpp
@@ -29,24 +27,13 @@ $(BIN)/Basic_Data_Base : $(OBJ)/Basic_Data_Base.o $(LIB)/libUser_Pssw_Matrix_Cla
 	@echo Creating Basic_Data_Base executable
 	@g++ -o $(BIN)/Basic_Data_Base $(OBJ)/Basic_Data_Base.o -L$(LIB) -lUser_Pssw_Matrix_Class -I$(INCLUDE)
 
-#Creating directories (i cant upload empty directories to github xd)
-
-bin :
-	@-mkdir bin
-
-lib :
-	@-mkdir lib
-
-obj : 
-	@-mkdir obj
-
 #clean & mr.proper
 
 clean : 
 	@echo Deleting objects
 	@-rm $(OBJ)/*
 mr.proper : 
-	@echo Deleting everything
+	@echo Deleting everithing
 	@-rm $(OBJ)/*
 	@-rm $(BIN)/*
 	@-rm $(LIB)/*
