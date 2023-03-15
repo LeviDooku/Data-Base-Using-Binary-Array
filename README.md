@@ -13,4 +13,8 @@ Upload the basic program, it's not finished yet. I already see many ways to modi
 
 Created a new function "Save_To_File" that store new users in a txt file. I´m looking for the way to work with this 
 file, to avoid getting users with same user names and all that stuff. Also I update the Show_Matrix function, no it 
-shows the file, not the current matrix
+shows the file, not the current matrix.
+
+- March 15, 2023:
+
+Modularized functions in "Basic_Data_Base.cpp". I'm looking forward to reduce those function cuz they're huuuuge.
