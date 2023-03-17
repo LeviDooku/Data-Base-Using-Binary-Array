@@ -55,7 +55,7 @@ void Log_In(User_Pssw_Matrix& data_base){
 
 	//Checking if the credentials are correct
 	while(data_base.User_Name_Comprobation(user_name) == false){
-		cout << "Usuario no encontado, pruebe de nuevo: " << endl;
+		cout << "Usuario no encontrado, pruebe de nuevo: " << endl;
 		cin >> user_name;
 	}
 
