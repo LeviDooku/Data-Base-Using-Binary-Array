@@ -37,6 +37,12 @@ $(BIN)/Basic_Data_Base : $(OBJ)/Basic_Data_Base.o $(LIB)/libUser_Pssw_Matrix_Cla
 	@echo Creating Basic_Data_Base executable
 	@g++ -o $(BIN)/Basic_Data_Base $(OBJ)/Basic_Data_Base.o -L$(LIB) -lUser_Pssw_Matrix_Class -lUser_Pssw_Matrix_Functions -I$(INCLUDE)
 
+#Create directories
+
+Directories : 
+	@echo Creating directories
+	@mkdir bin obj lib
+
 #clean & mr.proper
 
 clean : 
