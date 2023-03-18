@@ -3,7 +3,8 @@ My very first "complex" proyect in C++.
 
 The program consist in stroring users and their passwords in a binary array using a class that include methods to modify user names, passwords or deleting a user. 
 
-To compile and try the program use the makefile: `makefile -f makefile.mak directories` then `makefile -f makefile.mak` and `./bin/Basic_Data_Base`
+To compile and try the program use the makefile: `makefile -f makefile.mak Directories` then `makefile -f makefile.mak` and 
+`./bin/Basic_Data_Base`
 
 - March 10, 2023:
 
@@ -18,3 +19,8 @@ shows the file, not the current matrix.
 - March 15, 2023:
 
 Modularized functions in "Basic_Data_Base.cpp". I'm looking forward to reduce those function cuz they're huuuuge.
+
+- March 18, 2023:
+
+Added funcionality to create the directories needed for the program
+
