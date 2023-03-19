@@ -3,8 +3,7 @@ My very first "complex" proyect in C++.
 
 The program consist in stroring users and their passwords in a binary array using a class that include methods to modify user names, passwords or deleting a user. 
 
-To compile and try the program use the makefile: `makefile -f makefile.mak Directories` then `makefile -f makefile.mak` and 
-`./bin/Basic_Data_Base`
+To compile and try the program use the makefile: just type `makefile` and after the compile finished `./bin/Basic_Data_Base`
 
 - March 10, 2023:
 
