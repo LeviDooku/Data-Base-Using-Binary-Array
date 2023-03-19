@@ -5,7 +5,7 @@ LIB=$(HOME)/lib
 INCLUDE=$(HOME)/include
 BIN=$(HOME)/bin
 
-all : $(BIN)/Basic_Data_Base
+all : Directories $(BIN)/Basic_Data_Base
 	@echo ALL DONE
 
 #Libraries
