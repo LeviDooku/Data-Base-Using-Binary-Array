@@ -23,9 +23,11 @@ int main(){
 		cin >> option;
 
 		if(option == 'a'){
+			cout << endl;
 			Add_New_User(data_base);
 		}
-		else if(option == 'b'){			
+		else if(option == 'b'){	
+			cout << endl;		
 			Log_In(data_base);
 		}
 		else if(option == 'q'){
