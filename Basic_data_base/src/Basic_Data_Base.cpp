@@ -11,8 +11,6 @@ int main(){
 
 	User_Pssw_Matrix data_base;
 	char option;
-
-	//Save_To_File(data_base);
 	
 	//Opening a menu with an infinite while structure 
 	while(true){
