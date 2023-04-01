@@ -23,3 +23,7 @@ Modularized functions in "Basic_Data_Base.cpp". I'm looking forward to reduce th
 
 Added funcionality to create the directories needed for the program
 
+- April 1, 2023 (lol xd):
+
+Added funcionality in the makefile, changed little mistakes in the code  
+To do: Fix some problems with the users_data.txt file, functions are huge, make them smaller, more specific. So many things xdddddD 
