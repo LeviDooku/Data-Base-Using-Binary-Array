@@ -1,3 +1,5 @@
+//User_Pssw_Matrix_Class.cpp
+
 #include "User_Pssw_Matrix_Class.h"
 #include<iostream>
 #include<string>
@@ -160,6 +162,11 @@ using namespace std;
 				filename << matrix[i][0] << " " << matrix[i][1] << endl;
 		}
 	}
+
+	/*
+	void User_Pssw_Matrix::Load_From_File(){
+
+	}*/
 
 
 

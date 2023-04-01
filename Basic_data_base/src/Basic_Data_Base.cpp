@@ -1,3 +1,5 @@
+//Basic_Data_Base.cpp
+
 #include "User_Pssw_Matrix_Class.h"
 #include "User_Pssw_Matrix_Functions.h"
 #include<iostream>
@@ -34,7 +36,7 @@ int main(){
 
 		cout << endl << endl; 
 
-		//I show the matrix in the console to make sure all running ok
+		//Show the matrix in the console to make sure all running ok
 		cout << "************************" << endl;
 		data_base.Show_Matrix();
 		cout << "************************" << endl;
