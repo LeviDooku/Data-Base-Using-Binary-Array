@@ -17,7 +17,7 @@ using namespace std;
 	//Return the Index from a specific user
 	int User_Pssw_Matrix::Find_User_Index(string user_name){
 		for(int i = 0; i < num_rows; i++){
-			if(matrix[i][0] == user_name){
+			if(*(*(matrix + i) + 0) == user_name){
 				return i;
 			}
 		}	
@@ -29,7 +29,8 @@ using namespace std;
 		int user_index = Find_User_Index(user_name);
 
 		if(user_index != -1)
-			return matrix[user_index][1];
+			return *(*(matrix + user_index) + 1);
+			//return matrix[user_index][1];
 		else 
 			return "";
 	}
@@ -39,7 +40,7 @@ using namespace std;
 	    int user_index = Find_User_Index(user_name);
 
 	    if(user_index != -1)
-	        return matrix[user_index][0] + " " + matrix[user_index][1];
+	        return *(*(matrix + user_index) + 0) + " " + *(*(matrix + user_index) + 1);
 	    else 
 	        return "";
 	}
@@ -49,7 +50,7 @@ using namespace std;
 		int user_index = Find_User_Index(old_user_name);
 
 		if(user_index != -1){
-			matrix[user_index][0] = new_user_name; 
+			*(*(matrix + user_index) + 0) = new_user_name; 
 		}
 	}
 
@@ -58,7 +59,7 @@ using namespace std;
 		int user_index = Find_User_Index(user_name);
 
 		if(user_index != -1){
-			matrix[user_index][1] = new_password; 
+			*(*(matrix + user_index) + 1) = new_password; 
 		}
 	}
 
@@ -67,8 +68,8 @@ using namespace std;
 		int user_index = Find_User_Index(user_name);
 
 		if(user_index != -1){
-			matrix[user_index][0] = matrix[num_rows - 1][0];
-			matrix[user_index][1] = matrix[num_rows - 1][1];
+			*(*(matrix + user_index) + 0) = *(*(matrix + num_rows -1) + 0);
+			*(*(matrix + user_index) + 1) = *(*(matrix + num_rows -1) + 1);
 			num_rows--;
 		}
 	}
@@ -80,7 +81,7 @@ using namespace std;
 
 		for(int i = 0; i < num_rows; i++)
 			for(int j = 0; j < MAX_COL; j++)
-				if(matrix[i][j] == user_name)
+				if(*(*(matrix + i) + j) == user_name)
 					choosed = true;
 
 		return choosed;
@@ -122,8 +123,8 @@ using namespace std;
 		}
 		else{
 
-			matrix[num_rows][0] = user_name;
-			matrix[num_rows][1] = password;
+			*(*(matrix + num_rows) + 0) = user_name;
+			*(*(matrix + num_rows) + 1) = password;
 
 			num_rows++;	
 		}
@@ -159,7 +160,7 @@ using namespace std;
 		}
 
 		for(int i = 0; i < num_rows; i++){
-				filename << matrix[i][0] << " " << matrix[i][1] << endl;
+				filename << *(*(matrix + i) + 0) << " " << *(*(matrix + i) + 1) << endl;
 		}
 	}
 
