@@ -1,4 +1,7 @@
 # Data-Base-Using-Binary-Array
+
+SE VIENEN COSITAS
+
 My very first "complex" project in C++.
 
 The program consist in stroring users and their passwords in a binary array using a class that include methods to modify user names, passwords or deleting a user. 
