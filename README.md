@@ -2,6 +2,12 @@
 
 SE VIENEN COSITAS
 
+Plan de remodelación de proyecto:  
+	1) Usar pipelining para cliente / servidor  
+	2) Usar una ED como tabla hash o map para almacenamiento  
+	3) Portal de juego?  
+	4) Varios lenguajes? (para los juegos, c++, java etc.)  
+
 My very first "complex" project in C++.
 
 The program consist in stroring users and their passwords in a binary array using a class that include methods to modify user names, passwords or deleting a user. 
