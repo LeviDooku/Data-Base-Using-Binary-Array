@@ -3,6 +3,7 @@
 SE VIENEN COSITAS
 
 Plan de remodelación de proyecto:  
+ 0) Cambiar el nombre del repositorio xd
 	1) Usar pipelining para cliente / servidor  
 	2) Usar una ED como tabla hash o map para almacenamiento  
 	3) Portal de juego?  
